@@ -31,17 +31,32 @@
 #application logic
 input = document.getElementById("input")
 output = document.getElementById("output")
-def lenght(*args):
-    inputLenght = len(input.value)
-    result = f'The text is {inputLenght} charachters.'
+
+def length(*args):
+    inputLength = len(input.value)
+    result = f'The text is {inputLength} charachters.'
     console.log(result)
     output.innerText= result
+           
 def lowercase(*args):
     result = input.value.lower()
     console.log(result)
     output.innerText = result
+           
 def swapcase(*args):
     result = input.value.swapcase()
+           
+def clear(*args):
+    input.value=''
+    output.innerText='Output'
+
+def uppercase(*args):
+    result = input.value.upper()
+    console.log(result)
+    output.innerText = result
+
+def reverse(*args):
+    result = input.value[::-1]
     console.log(result)
     output.innerText = result
 </py-script>
