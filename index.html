@@ -29,7 +29,22 @@
 
 <py-script>
 #application logic
+input = document.getElementById("input")
+output = document.getElementById("output")
 
+def clear(*args):
+    input.value=''
+    output.innerText='Output'
+
+def uppercase(*args):
+    result = input.value.upper()
+    console.log(result)
+    output.innerText = result
+
+def reverse(*args):
+    result = input.value[::-1]
+    console.log(result)
+    output.innerText = result
 </py-script>
 </body>
 
