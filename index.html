@@ -10,8 +10,23 @@
 </head>
 
 <body>
-    <!-- content -->
-    
+    <div class="container">
+        <h1>Text manipulation with PyScript</h1>
+        <textarea id="input" placeholder="Enter your text..."></textarea>
+        <br>
+        <button id="button1" class="is-danger" pys-onclick="clear">Clear</button>
+        <button id="button2" class="is-primary" pys-onclick="length">Length</button>
+        <button id="button3" class="is-primary" pys-onclick="uppercase">Upper case</button>
+        <button id="button4" class="is-primary" pys-onclick="lowercase">Lowercase</button>
+        <button id="button5" class="is-primary" pys-onclick="swapcase">Swapcase</button>
+        <button id="button6" class="is-primary" pys-onclick="reverse">Reverse</button>
+        <button id="button7" class="is-primary" pys-onclick="withoutSpaces">Without Spaces</button>
+        <button id="button8" class="is-primary" pys-onclick="withoutVowel">Without Vowel*</button>
+        <button id="button9" class="is-primary" pys-onclick="spaceFilter">Space Filter*</button>
+        <button id="button10" class="is-primary" pys-onclick="pascalCase">Pascal Case*</button>
+        <h1 id="output">Output</h1>
+    </div>
+
 <py-script>
 #application logic
 
