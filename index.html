@@ -29,7 +29,21 @@
 
 <py-script>
 #application logic
-
+input = document.getElementById("input")
+output = document.getElementById("output")
+def lenght(*args):
+    inputLenght = len(input.value)
+    result = f'The text is {inputLenght} charachters.'
+    console.log(result)
+    output.innerText= result
+def lowercase(*args):
+    result = input.value.lower()
+    console.log(result)
+    output.innerText = result
+def swapcase(*args):
+    result = input.value.swapcase()
+    console.log(result)
+    output.innerText = result
 </py-script>
 </body>
 
